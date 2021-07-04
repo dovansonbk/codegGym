@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.col-1{width: 8.3%;}
+		.col-2{width: 16.66%;}
+		.col-3{width: 25%;}
+		.col-4{width: 33.33%;}
+		.col-5{width: 41.67%;}
+		.col-6{width: 50%;}
+		.col-7{width: 58.33%;}
+		.col-8{width: 66.67%;}
+		.col-9{width: 75%;}
+		.col-10{width: 83.33%;}
+		.col-11{width: 91.67%;}
+		.col-12{width: 100%;}
+		@media only screen and (max-width: 768px) {
+			/*Dung cho mobile*/
+			[class*="col-"]{
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="col-12">
+		<header class="col-12" style="background: red;">
+			Header
+		</header>
+		<div id="center" style="background: blue;">
+			<div id="col-3" style="background: yellow; float: left;">
+				Left
+			</div>
+			<div id="col-9" style="background: green; float: left;">
+				Right
+			</div>
+		</div>
+		<footer class="col-12" style="background: pink;">
+			Footer
+		</footer>
+	</div>
+</body>
+</html>
