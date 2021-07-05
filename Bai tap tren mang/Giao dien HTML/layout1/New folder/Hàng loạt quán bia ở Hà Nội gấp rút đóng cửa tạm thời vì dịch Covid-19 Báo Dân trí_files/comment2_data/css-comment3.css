@@ -1,0 +1,820 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none
+}
+
+html, body {
+    font-family: Helvetica, Tahoma, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: normal;
+    -webkit-text-size-adjust: none
+}
+
+.clearfix, .list > li {
+    zoom: 1
+}
+
+.clearfix:before, .clearfix:after, .list > li:before, .list > li:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden
+}
+
+.clearfix:after, .clear {
+    clear: both
+}
+
+.list > li:after {
+    clear: both
+}
+
+.clr {
+    clear: both
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+ul {
+    list-style: none
+}
+
+a {
+    cursor: pointer
+}
+
+.dantri-label {
+    display: block;
+    font-weight: bold;
+    position: relative;
+    font-size: 16px;
+    color: #007237;
+    letter-spacing: 0;
+    word-spacing: -5px
+}
+
+.dantri-label .sub {
+    position: relative;
+    top: 4px;
+    padding-left: 3px
+}
+
+.ico-login-as-fb, .ico-login-as-google, .comments .action .ico-like, .comments .ico-viewsubcmt, .comments .ico-slideup {
+    background-image: url('/images/sprite-comment.png');
+    background-repeat: no-repeat;
+    display: inline-block
+}
+
+.comments .ico-slideup {
+    background-position: 0 -69px;
+    width: 9px;
+    height: 6px
+}
+
+.comments .ico-viewsubcmt {
+    background-position: 0 -76px;
+    width: 11px;
+    height: 8px
+}
+
+.comments .action .ico-like {
+    background-position: 0 -54px;
+    width: 15px;
+    height: 15px
+}
+
+.ico-login-as-google {
+    background-position: -2px 0;
+    width: 27px;
+    height: 27px
+}
+
+.ico-login-as-fb {
+    background-position: 0 -27px;
+    width: 27px;
+    height: 27px
+}
+
+.ico-login-as-google.standard {
+    background-position: 0 0;
+    width: 99px;
+    height: 27px
+}
+
+.ico-login-as-fb.standard {
+    background-position: 0 -27px;
+    width: 99px;
+    height: 27px
+}
+
+.box-comment, .box-comment * {
+    moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: helvetica, tahoma, 'lucida grande', sans-serif
+}
+
+.box-leavecomment {
+    margin-top: 4px;
+    background-color: #f6f6f6
+}
+
+.box-comment a {
+    cursor: pointer
+}
+
+.box-comment .dantri-label {
+    position: absolute;
+    background: transparent url('/images/Dantri_ID1.png') 0 0 no-repeat;
+    background-size: 100%;
+    color: transparent;
+    width: 79px;
+    height: 28px;
+    bottom: -1px;
+    left: 7px
+}
+
+.box-comment .form {
+    width: 100%;
+    padding: 0;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 2px 0 #f7f7f7
+}
+
+.box-comment .form > .inner {
+    display: block;
+    float: none;
+    width: 100%;
+    padding: 10px;
+    line-height: 15px
+}
+
+.box-comment .note {
+    border-bottom: 1px solid #eee
+}
+
+.box-comment .form textarea {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #dadada;
+    border-radius: 3px;
+    padding: 5px 5px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13.3333330154419px
+}
+
+.box-comment .form .action {
+    margin-top: 5px;
+    position: relative
+}
+
+.box-comment .form .btnSend {
+    float: right;
+    display: inline-block;
+    background: #6d84b4;
+    border-color: #3b5998;
+    font-size: 11.5px;
+    font-family: Tahoma;
+    width: 105px;
+    height: 28px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    cursor: pointer
+}
+
+.box-comment .form .btnSend.disabled {
+    opacity: .8
+}
+
+.has-session .box-comment .form .btnSend {
+    background-color: #4e69a2;
+    border-color: #435a8b #3c5488 #334c83
+}
+
+.box-comment .form .action .comment-count {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-bottom: 3px solid #ff9d08;
+    font-weight: bold;
+    line-height: 16px;
+    padding: 0 10px 8px 0;
+    font-size: 14px
+}
+
+.box-comment .list-comments {
+    padding: 10px 10px 0;
+    border: solid 1px #eee;
+    background-color: #fdfdfd
+}
+
+.comments > li {
+    position: relative;
+    padding-left: 46px;
+    margin-bottom: 12px;
+    padding-top: 10px;
+    border-top: solid 1px #eee
+}
+
+.comments > li.last {
+    padding-left: 0
+}
+
+.comments > li.more {
+    border-top: 0;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: #e77010;
+    line-height: 25px;
+    padding: 0;
+    background-color: #ddd;
+    border-radius: 3px
+}
+
+.comments > li.more:hover {
+    text-decoration: underline
+}
+
+.comments .userinfo {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase
+}
+
+.comments .cmt-avatar {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    background: #ECECEC;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 24px;
+    line-height: 20px;
+    vertical-align: middle;
+    color: #FFF;
+    font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    border-radius: 50%
+}
+
+.comments .cmt-avatar img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 3px
+}
+
+.comments .cmt-author {
+    display: block;
+    font-weight: bold;
+    color: #009EE5;
+    padding-right: 5px;
+    text-transform: capitalize;
+    margin-bottom: 2px
+}
+
+.comments > li:first-child {
+    border-top: 0
+}
+
+.comments .cmt-email {
+    color: #aaa;
+    font-size: 11px;
+    text-transform: none
+}
+
+.comments .cmt-content {
+    font-size: 14px;
+    line-height: 22px;
+    color: #1b1f22
+}
+
+.comments .action {
+    margin-top: 5px;
+    white-space: nowrap;
+    line-height: 19px
+}
+
+.comments .action * {
+    float: left
+}
+
+.comments .action .user-info {
+    float: right
+}
+
+.comments .action .sprt {
+    display: inline-block;
+    padding: 0 5px
+}
+
+.comments .act-item {
+    position: relative;
+    color: #38aee3
+}
+
+.comments .action .btn {
+    display: inline-block;
+    cursor: pointer;
+    position: relative
+}
+
+.comments .action .btn:hover {
+    text-decoration: underline
+}
+
+.comments .action .act-item.likecount {
+    padding-left: 18px
+}
+
+.comments .date {
+    color: #A3B0B9;
+    font-weight: normal;
+    font-size: 11px;
+    text-transform: lowercase
+}
+
+.comments .view-subcmt {
+    position: relative;
+    padding-left: 15px;
+    margin-top: 4px;
+    color: #1a7900;
+    display: block
+}
+
+.comments .ico-like {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.comments .ico-viewsubcmt, .comments .ico-slideup {
+    position: absolute;
+    top: 3px;
+    left: 0
+}
+
+.comments.sub {
+    border-left: 2px solid #dcdee3;
+    padding: 0 0 0 10px;
+    margin-left: 3px
+}
+
+.comments.sub .cmt-avatar {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 11px
+}
+
+.comments.sub > li {
+    padding-left: 36px
+}
+
+.comments.sub > li .comment-acc a {
+    line-height: 24px
+}
+
+.comments.sub > li .form {
+    padding: 5px;
+    border-radius: 0 0 3px 3px;
+    border: solid 1px #eee
+}
+
+.comments.sub .comment-count {
+    display: none
+}
+
+.comments.sub > li .dantri-label {
+    display: none
+}
+
+.box-comment .thirdpartylogin li, .box-comment .user-info li {
+    display: inline-block;
+    line-height: 45px;
+    height: 27px;
+    float: left;
+    color: #8F8F8F
+}
+
+.box-comment .thirdpartylogin li a, .box-comment .user-info li a {
+    color: #3b5998
+}
+
+.box-comment .thirdpartylogin li a {
+    margin-left: 5px
+}
+
+.box-comment .user-info li {
+    line-height: 30px
+}
+
+.box-comment .comments .form {
+    border: 0;
+    box-shadow: none
+}
+
+.box-comment .comments .form > .inner {
+    margin: 0;
+    padding: 0
+}
+
+.box-comment .comments .form textarea {
+    margin-top: 4px;
+    height: 50px
+}
+
+.box-comment .comments .form .btnSend {
+    padding: 3px 7px;
+    line-height: 16px;
+    height: 26px
+}
+
+.box-comment .comments .form .thirdpartylogin {
+    display: none
+}
+
+.loginform {
+    width: 420px
+}
+
+.loginform li {
+    margin-bottom: 5px;
+    clear: both
+}
+
+.loginform li * {
+    display: block
+}
+
+.loginform .label {
+    font-family: Arial;
+    font-size: 13px;
+    line-height: 28px;
+    color: #333;
+    font-weight: bold
+}
+
+.loginform input[type="text"] {
+    border-top: 1px solid #dadada;
+    border-left: 1px solid #dadada;
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #fafafa;
+    height: 28px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    width: 280px
+}
+
+.loginform input[type="button"] {
+    display: inline-block;
+    padding: 3px 19px;
+    background: #009400;
+    cursor: pointer;
+    border: solid 1px green;
+    color: white;
+    width: 99px;
+    height: 27px
+}
+
+.toggle-text, .loading-text {
+    display: none
+}
+
+.loading .loading-text {
+    display: block
+}
+
+.loading .default-text {
+    display: none
+}
+
+.toggle .toggle-text {
+    display: block
+}
+
+.toggle .default-text {
+    display: none
+}
+
+.comment-placeholder {
+    display: none
+}
+
+.user-info {
+    display: none
+}
+
+.has-session .user-info {
+    display: block
+}
+
+.has-session .user-action {
+    display: none
+}
+
+.comment-bar {
+    border: solid #eee;
+    border-width: 1px 1px 0 3px;
+    padding: 0 10px;
+    border-left-color: green;
+    position: relative
+}
+
+.comment-bar {
+    background: rgba(245, 245, 245, 1);
+    background: -moz-linear-gradient(left, rgba(245, 245, 245, 1) 30%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(245, 245, 245, 1)), color-stop(100%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
+    background: -webkit-linear-gradient(left, rgba(245, 245, 245, 1) 30%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 1) 100%);
+    background: -o-linear-gradient(left, rgba(245, 245, 245, 1) 30%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(245, 245, 245, 1) 30%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to right, rgba(245, 245, 245, 1) 30%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#ffffff', GradientType=1)
+}
+
+.comment-acc {
+    float: right
+}
+
+.comment-acc, .comment-acc a {
+    color: #3b7cbd
+}
+
+.comment-acc a {
+    line-height: 36px;
+    display: inline-block
+}
+
+.comment-acc a:hover {
+    text-decoration: underline
+}
+
+.form-page {
+    margin: 10px;
+    border: solid 1px #999
+}
+
+.form-page * {
+    box-sizing: border-box
+}
+
+.form-page .form-body {
+    padding: 10px;
+}
+
+.form-page .top-bar {
+    background-color: #f5f5f5;
+    position: relative;
+    height: 32px;
+    border-left: solid green;
+    border-width: 1px 1px 0 3px;
+    border-left-color: green;
+    padding: 0 10px
+}
+
+.form-page .top-bar .dantri-label {
+    position: absolute;
+    background: transparent url('../images/Dantri_ID1.png') 0 0 no-repeat;
+    color: transparent;
+    width: 79px;
+    height: 28px;
+    bottom: 0;
+    right: 8px;
+    background-size: 100%
+}
+
+.form-page .page-title {
+    display: block;
+    line-height: 32px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #6e6e6e
+}
+
+.form-page table.form-layout {
+    width: 100%
+}
+
+.form-page table.form-layout, .form-page table.form-layout th, .form-page table.form-layout td {
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 12px;
+    font-family: tahoma, arial, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    line-height: 18px
+}
+
+.form-page table.form-layout th, .form-page table.form-layout td {
+    padding: 5px
+}
+
+.form-page table.form-layout th {
+    min-width: 135px
+}
+
+.form-page table.form-layout td {
+    width: 80%
+}
+
+.form-page table.form-layout .textbox {
+    border-radius: 2px;
+    height: 36px;
+    line-height: 36px;
+    padding: 2px 4px;
+    border: solid 1px #eee;
+    width: 100%
+}
+
+.form-page table.form-layout .button {
+    display: inline-block;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 #f7f7f7;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f5f5f5));
+    background: -moz-linear-gradient(top, #fff, #f5f5f5);
+    background: -ms-linear-gradient(top, #fff, #f5f5f5);
+    background: -o-linear-gradient(top, #fff, #f5f5f5);
+    background: linear-gradient(top, #fff, #f5f5f5);
+    color: black
+}
+
+.form-page .buttons * {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5%
+}
+
+.form-page table.form-layout .textbox.captcha-text {
+    width: 100px
+}
+
+.form-page table.form-layout .captcha-image {
+    display: inline-block;
+    line-height: 100%;
+    vertical-align: bottom;
+    height: 100%
+}
+
+.form-page .note {
+    padding: 0 10px;
+    margin-top: 10px;
+    font-style: italic
+}
+
+.form-page .note span {
+    color: red
+}
+
+.form-page .note.ok span {
+    color: green
+}
+
+.profile-page fieldset {
+    margin: 20px 15px;
+    padding: 10px;
+    border-color: #ededed;
+    border-width: 1px 0 0 0
+}
+
+.profile-page legend {
+    font-weight: bold;
+    color: green
+}
+
+.vta-top {
+    vertical-align: top
+}
+
+select {
+    background: #fff;
+    border: 1px solid #cacaca;
+    color: #808080;
+    font-size: 12px;
+    margin: 0;
+    padding: 2px 2px 2px 0;
+    outline: 0;
+    height: 27px;
+    border: 1px solid #ccc;
+    background: #f0f0f0;
+    margin-right: 5px
+}
+
+.gender {
+    display: inline-block
+}
+
+.gender input {
+    vertical-align: -2px;
+    margin: 0 4px
+}
+
+.form-page .form-layout .profile-avatar {
+    width: 90px;
+    height: 90px;
+    float: left;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    padding: 2px
+}
+
+.form-page .form-layout .change-avatar-wrap {
+    position: relative;
+    padding-top: 20px
+}
+
+.form-page .form-layout .change-avatar-wrap .btn-select-img {
+    width: 100px;
+    cursor: pointer
+}
+
+.form-page .form-layout .change-avatar-wrap input[type="file"] {
+    position: absolute;
+    left: 110px;
+    width: 100px;
+    bottom: 0;
+    height: 30px;
+    cursor: pointer;
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0
+}
+
+.message {
+    font-size: 14px;
+    line-height: 22px;
+    color: #333;
+    padding: 10px;
+    display: block
+}
+
+.ta-center {
+    text-align: center
+}
+
+.message .button {
+    display: block;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 #f7f7f7;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f5f5f5));
+    background: -moz-linear-gradient(top, #fff, #f5f5f5);
+    background: -ms-linear-gradient(top, #fff, #f5f5f5);
+    background: -o-linear-gradient(top, #fff, #f5f5f5);
+    background: linear-gradient(top, #fff, #f5f5f5);
+    color: black
+}
+
+.form-page .form-layout input[type=text].invalid, .form-page .form-layout input[type=password].invalid, .form-page .form-layout textarea.invalid {
+    background: #F5F3BA;
+    border: 1px solid #C7A20D;
+    color: #796616;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none
+}
+
+.help {
+    vertical-align: middle
+}
+
+.help img {
+    position: relative;
+    margin-top: -4px;
+    height: 18px;
+    width: 18px;
+    margin-left: 6px;
+    vertical-align: middle
+}

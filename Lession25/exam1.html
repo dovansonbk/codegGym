@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		#box{
+			width: 600px;
+			height: 400px;
+			background: #b4b4b4;
+			border-radius: 20px;
+			position: relative;
+		}
+		#box img{
+			width: 600px;
+			height: 400px;
+			border-radius: 20px;
+			position: absolute;
+			z-index: 1;
+		}
+		/*.overlay{
+			display: none;
+			width: 600px;
+			height: 400px;
+			background: #FFF;
+		}*/
+		.text{
+			/*display: none;*/
+			width: 600px;
+			height: 400px;
+			position: absolute;
+			/*top: 60%;*/
+			padding-top: 200px;
+			text-align: center;
+			z-index: 2;
+			opacity: 0;
+		}
+		#box:hover img{
+			opacity: 0.8;
+		}
+		#box:hover .text{
+			padding-top: 200px;
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<img src="./img/exam1.jpg">
+		<!-- <div class="overlay"></div> -->
+		<div class="text">
+			<h2>Tiêu đề H2</h2>
+			<hr>
+			<p>Chiến thắng 3-1 trước Scotland ở lượt đấu cuối giúp Croatia vượt qua vòng bảng ở vị trí thứ hai, hơn CH Séc đúng 1 bàn thắng ghi được. Những gì Luka Modric và các đồng đội thể hiện ở trận đấu cuối trước Scotland cho thấy họ dường như đã “nóng máy” sau những màn trình diễn kém thuyết phục trước Anh (thua 0-1) và CH Séc (hòa 1-1).</p>
+		</div>
+	</div>
+</body>
+</html>

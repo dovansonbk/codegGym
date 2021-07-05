@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Zalo Share Button</title>
+        <style>
+            body{font-family:arial; margin: 0;}
+            .zb-btn-white--20x20{display:inline-block;background-color:#fff;width:20px;height:20px;line-height:20px;text-decoration:none;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;text-align:center;}
+            .zb-btn-white--20x20:hover{opacity:0.85;}
+            .zb-btn-backlink{position: absolute;width: 2px;height: 2px;background-color: #03a5fa;top: 0;right: 5px;border-radius: 10px;}
+            .czb{position: relative;}
+            .zb-btn-white--20x20 .zb-logo-zalo{display:inline-block;vertical-align:middle;margin-bottom:0.15em;width:14px;height:14px;background:url(https://stc.sp.zdn.vn/share/logo_blue_s.png);}
+            @media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) { 
+                .zb-btn-white--20x20 .zb-logo-zalo{background:url(https://stc.sp.zdn.vn/share/logo_blue_s_2x.png);-webkit-background-size:14px 14px;background-size:14px 14px;}
+            }
+
+            .zb-btn-white--30x30{display:inline-block;background-color:#fff;width:30px;height:30px;line-height:30px;text-decoration:none;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;text-align:center;}
+            .zb-btn-white--30x30:hover{opacity:0.85;}
+            .zb-btn-white--30x30 .zb-logo-zalo{display:inline-block;vertical-align:middle;margin-bottom:0.15em;width:20px;height:20px;background:url(https://stc.sp.zdn.vn/share/logo_blue_s_30.png);background-size:20px 20px}
+            @media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) { 
+                .zb-btn-white--30x30 .zb-logo-zalo{background:url(https://stc.sp.zdn.vn/share/logo_blue_s_2x_30.png);-webkit-background-size:20px 20px;background-size:20px 20px;}
+            }
+
+            .zb-btn-white--40x40{display:inline-block;background-color:#fff;width:40px;height:40px;line-height:40px;text-decoration:none;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;text-align:center;}
+            .zb-btn-white--40x40:hover{opacity:0.85;}
+            .zb-btn-white--40x40 .zb-logo-zalo{display:inline-block;vertical-align:middle;margin-bottom:0.15em;width:26px;height:26px;background:url(https://stc.sp.zdn.vn/share/logo_blue_s_40.png);background-size:26px 26px}
+            @media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) { 
+                .zb-btn-white--40x40 .zb-logo-zalo{background:url(https://stc.sp.zdn.vn/share/logo_blue_s_2x_40.png);-webkit-background-size:26px 26px;background-size:26px 26px;}
+            }
+
+            .zb-btn-white--small{display:inline-block;background-color:#fff;color:#03a5fa;width:70px;height:20px;line-height:20px;text-decoration:none;font-size:11px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;text-align:center;}
+            .zb-btn-white--small:hover{opacity:0.85;}
+            .zb-btn-white--small .zb-logo-zalo{display:inline-block;vertical-align:middle;margin-bottom:0.15em;margin-right:4px;width:14px;height:14px;background:url(https://stc.sp.zdn.vn/share/logo_blue_s.png);}
+            @media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) { 
+                .zb-btn-white--small .zb-logo-zalo{background:url(https://stc.sp.zdn.vn/share/logo_blue_s_2x.png);-webkit-background-size:14px 14px;background-size:14px 14px;}
+            }
+
+            .zb-btn-white--large{display:inline-block;width:40px;}
+            .zb-btn-white--large:hover{opacity:0.85;}
+            .zb-btn-white--large .zb-logo-zalo{display:block;width:40px;height:40px;background:url(https://stc.sp.zdn.vn/share/logo_white_l.jpg);-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;margin-bottom:1px;}
+            @media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) { 
+                .zb-btn-white--large .zb-logo-zalo{background:url(https://stc.sp.zdn.vn/share/logo_white_l_2x.jpg);-webkit-background-size:40px 40px;background-size:40px 40px;}
+            }
+            .zb-btn-white--large span{display:inline-block;font-style:normal;width:40px;height:17px;line-height:18px;margin-top:0;background-color:#fff;color:#03a5fa;font-size:9px;text-decoration:none;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;text-align:center;}
+
+            .zb-btn-blue--20x20{display:inline-block;background-color:#03a5fa;width:20px;height:20px;line-height:20px;text-decoration:none;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;text-align:center;}
+            .zb-btn-blue--20x20:hover{opacity:0.85;}
+            .zb-btn-blue--20x20 .zb-logo-zalo{display:inline-block;vertical-align:middle;margin-bottom:0.15em;width:14px;height:14px;background:url(https://stc.sp.zdn.vn/share/logo_white_s.png);}
+            @media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) { 
+                .zb-btn-blue--20x20 .zb-logo-zalo{background:url(https://stc.sp.zdn.vn/share/logo_white_s_2x.png);-webkit-background-size:14px 14px;background-size:14px 14px;}
+            }
+
+            .zb-btn-blue--30x30{display:inline-block;background-color:#03a5fa;width:30px;height:30px;line-height:30px;text-decoration:none;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;text-align:center;}
+            .zb-btn-blue--30x30:hover{opacity:0.85;}
+            .zb-btn-blue--30x30 .zb-logo-zalo{display:inline-block;vertical-align:middle;margin-bottom:0.15em;width:20px;height:20px;background:url(https://stc.sp.zdn.vn/share/logo_white_s_30.png);background-size:20px 20px}
+            @media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) { 
+                .zb-btn-blue--30x30 .zb-logo-zalo{background:url(https://stc.sp.zdn.vn/share/logo_white_s_2x_30.png);-webkit-background-size:20px 20px;background-size:20px 20px;}
+            }
+            .zb-btn-blue--40x40{display:inline-block;background-color:#03a5fa;width:40px;height:40px;line-height:40px;text-decoration:none;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;text-align:center;}
+            .zb-btn-blue--40x40:hover{opacity:0.85;}
+            .zb-btn-blue--40x40 .zb-logo-zalo{display:inline-block;vertical-align:middle;margin-bottom:0.15em;width:26px;height:26px;background:url(https://stc.sp.zdn.vn/share/logo_white_s_40.png);background-size:26px 26px}
+            @media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) { 
+                .zb-btn-blue--40x40 .zb-logo-zalo{background:url(https://stc.sp.zdn.vn/share/logo_white_s_2x_40.png);-webkit-background-size:26px 26px;background-size:26px 26px;}
+            }
+
+            .zb-btn-blue--small{display:block;background-color:#03a5fa;color:#fff;width:70px;height:20px;line-height:20px;text-decoration:none;font-size:11px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;text-align:center;}
+            .zb-btn-blue--small:hover{opacity:0.85;}
+            .zb-btn-blue--small .zb-logo-zalo{display:inline-block;vertical-align:middle;margin-bottom:0.15em;margin-right:4px;width:14px;height:14px;background:url(https://stc.sp.zdn.vn/share/logo_white_s.png);}
+            @media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) { 
+                .zb-btn-blue--small .zb-logo-zalo{background:url(https://stc.sp.zdn.vn/share/logo_white_s_2x.png);-webkit-background-size:14px 14px;background-size:14px 14px;}
+            }
+
+            .zb-btn-blue--large{display:inline-block;width:40px;}
+            .zb-btn-blue--large:hover{opacity:0.85;}
+            .zb-btn-blue--large .zb-logo-zalo{display:block;width:40px;height:40px;background:url(https://stc.sp.zdn.vn/share/logo_blue_l.jpg);-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;margin-bottom:1px;}
+            @media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) { 
+                .zb-btn-blue--large .zb-logo-zalo{background:url(https://stc.sp.zdn.vn/share/logo_blue_l_2x.jpg);-webkit-background-size:40px 40px;background-size:40px 40px;}
+            }
+            .zb-btn-blue--large span{display:inline-block;font-style:normal;width:40px;height:18px;line-height:18px;margin-top:0;background-color:#fff;color:#8d8d8d;font-size:9px;text-decoration:none;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;text-align:center;border:#c1c1c1 solid 1px;box-sizing:border-box;}
+
+        </style>
+        <script src="share_data/sdk-server-1.js"></script>
+    </head>
+    <body>
+        
+        
+        
+        
+        <a href="#!" onclick="zShareNow(); return false;" class="czb zb-btn-blue--40x40"><i class="zb-logo-zalo"></i></a>
+        
+        
+        <script>
+            var VERSION = '105';
+            var IS_LOGGED = 'logged';
+            var SHARE_URL = 'https://dantri.com.vn/xa-hoi/hang-loat-quan-bia-o-ha-noi-gap-rut-dong-cua-tam-thoi-vi-dich-covid-19-20210511181139264.htm';
+            var OAID = '3788459333857608754';
+            var ANDROID = 'false';
+            var IOS = 'false';
+
+            function zShareNow() {
+                ZSDKServer.get('../verify_center?t=f2jp4ojBN6QvBtC6Rlq90HOzGnnn', function () {
+                    ZSDKServer.postMessage(ZSDKMessageType.CLICK, {
+                        id: 'd0eaea84-1cb6-48a1-af35-a4fbaa4f41ca'
+                    });
+                }, function () {
+
+                });
+                return false;
+            }
+
+            window.onload = function () {
+                ZSDKServer.init();
+
+                ZSDKServer.subscribe("zshare_message", function () {
+                    zShareNow();
+                });
+                ZSDKServer.subscribe("zshare_reload", function () {
+                    window.location.reload();
+                });
+
+                ZSDKServer.postMessage(ZSDKMessageType.SHARE_DATA, {
+                    id: 'd0eaea84-1cb6-48a1-af35-a4fbaa4f41ca',
+                    data: {
+                        baseUrl: 'https://sp.zalo.me',
+                        isLogged: IS_LOGGED,
+                        shareUrl: SHARE_URL,
+                        android: ANDROID,
+                        ios: IOS,
+                        oaid: OAID
+                    }
+                });
+            };
+
+        </script>
+    
+</body></html>

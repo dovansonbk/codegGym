@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		/*div{
+			width: 100px;
+			height: 100px;
+			background: red;
+			transition: 3s;
+		}
+
+		div:hover{
+			width: 300px;
+			height: 300px;
+			background: blue;
+		}*/
+		a{
+			position: relative;
+		}
+		a:before{
+			position: absolute;
+			content: '';
+			/*background: red;*/
+			width: 0%;
+			height: 20px;
+			bottom: -40%;
+			transition: width 0.5s;
+			z-index: -1;
+			border-bottom: 3px solid red;
+		}
+		a:hover::before{
+			content: '';
+			width: 100%;
+			left: 0;
+			height: 20px;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div id="menu">
+		<a href="#" class="underline">Link1</a>
+		<a href="#" class="underline">Link2</a>
+	</div>
+</body>
+</html>
