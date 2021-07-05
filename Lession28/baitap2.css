@@ -1,0 +1,15 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+/*For  mobile*/
+h1{
+	width: 100%;
+	text-align: left;
+}
+#all{
+	width: 100%;
+	background: #f2f2f2;
+	padding: ;
+}
