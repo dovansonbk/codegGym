@@ -1,0 +1,43 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+#container1 {
+	width: 200px;
+	border: 10px double #989EA1;
+}
+
+
+
+#div-1 {
+	margin: 10px  10px 5px 10px;
+}
+#div-2 {
+	margin:  5px  10px 5px 10px;
+}
+#div-3 {
+	margin:  5px  10px 10px 10px;
+}
+
+p {
+  background-color: #529BC1;
+  border-radius: 0px;
+  font-family: arial;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  /*display: inline-block;*/
+  text-align: center;
+}
+
+
+/**/
+
+#container2 {
+	width: 200px;
+	border: 10px double #989EA1;
+}
+#div {
+	
+}

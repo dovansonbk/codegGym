@@ -1,0 +1,88 @@
+#all {
+	width: 900px;
+	background: #999393;
+	margin: auto;
+}
+.dong {
+	width: 900px;
+	height: 400px;
+	background: #FFFFFF;
+	float: left;
+}
+#red1 {
+	width: 300px;
+	height: 100px;
+	background: red;
+	margin: auto;
+}
+
+#box1 {
+	width: 300px;
+	height: 300px;
+	margin: auto;
+}
+#xam1 {
+	width: 100px;
+	height: 300px;
+	background: #969696;
+	float: left;
+	margin: auto;
+}
+#xam2 {
+	width: 100px;
+	height: 300px;
+	background: #969696;
+	margin-left: 200px;
+}
+
+/*Dong 2*/
+#red2 {
+	width: 500px;
+	height: 100px;
+	background: red;
+	margin: auto;
+}
+#box2 {
+	width: 500px;
+	height: 300px;
+	margin: auto;
+}
+#xam3 {
+	width: 100px;
+	height: 300px;
+	background: #969696;
+	float: left;
+	margin: auto;
+}
+#xam4 {
+	width: 100px;
+	height: 300px;
+	background: #969696;
+	margin-left: 400px;
+}
+/*Dong 3*/
+#red3 {
+	width: 700px;
+	height: 100px;
+	background: red;
+	margin: auto;
+	/*float: left;*/
+}
+#box3 {
+	width: 700px;
+	height: 300px;
+	margin: auto;
+}
+#xam5 {
+	width: 100px;
+	height: 300px;
+	background: #969696;
+	float: left;
+	margin: auto;
+}
+#xam6 {
+	width: 100px;
+	height: 300px;
+	background: #969696;
+	margin-left: 600px;
+}

@@ -1,0 +1,1 @@
+window.DT_PROMOTIONS = [{"image":"https://icdn.dantri.com.vn/zoom/50_50/2021/04/29/mobile-t-307-1619665320603.png","title":"Viêm gan B không lo","sapo":"Nhờ bí kíp kìm hãm virus này","url":"https://dantri.com.vn/suc-khoe/cach-am-tinh-virus-viem-gan-b-chi-sau-6-thang-cua-chang-trai-tre-20210117230414402.htm","cta":"Xem"}]

@@ -1,0 +1,62 @@
+.grid li a:after{ content: ''; -webkit-transform: scale(0);
+   -moz-transform: scale(0);
+   -ms-transform: scale(0);
+   -o-transform: scale(0);
+    transform: scale(0);
+    background: url(../images/icon/plus-icon.png) no-repeat center;
+    position: absolute; z-index: 100; top: 0px; right: 0px; left: 0px; bottom: 0px; background-color:rgba(0,0,0,0.4); transition: 0.5s; 
+}      
+.grid li:hover a:after{ 
+  -webkit-transform: scale(1);
+   -moz-transform: scale(1);
+    -ms-transform: scale(1);
+     -o-transform: scale(1);
+        transform: scale(1); }
+/* ========== Content pagination ========== */
+ul.pagination {text-align:center;color:#829994;}
+ul.pagination li {display:inline;padding:0 3px;}
+ul.pagination a {color:#3E3E3E;display:inline-block;padding: 1.5px 10px;border:1px solid #cde0dc;text-decoration:none;font-size: 13px;font-weight: bold;background: #fff;}
+ul.pagination a:hover, ul.pagination a.current {background:#4d4e4c;color:#fff; }
+.pagination {margin: auto;width: auto;text-align: center;margin: 10px 0px;}
+.pages {}
+.pages li.prev {margin-right: 15px;}
+.pages li.next {margin-left: 15px;}
+.pages li {display: inline-block;margin: 5px 2px;}
+.pages li a {height: 25px;padding: 4px 8px;text-decoration: none;color: #666666;font-weight: bold;background: url(../images/backgrounds/pagingBg.png) repeat-x 0 0;border: 1px solid #d5d5d5;font-size: 11px;}
+.pages li a:hover {background: #f6f6f6;}
+.pages li .active {background: url(../images/backgrounds/sideGradient.png) repeat-x;color: #fff;border-color: #424852;}
+.pages li .active:hover {background: #2a313d;}
+.ngaydang{ font-style: italic; color: #ccc;}
+/* ========== Content pagination ========== */
+.tab_product{margin: 0px 0px 10px 0px;float: left;width: 100%;text-align: center;}
+.tab_product ul{display: inline-block;}
+.tab_product ul li{float: left;color: #DFBD43;}
+.tab_product ul li a{font-family: "OpenSansRegular";font-size: 18px;color: #DFBD43;text-transform: capitalize;margin: 0px 18px;display: inline-block;position: relative;}
+.tab_product ul li a:after {content: "";position: absolute;left: -19px;bottom: 0;top: 5px;margin: auto;width: 4px;height: 4px;background: #DFBD43;}
+.tab_product ul li:nth-child(1) a:after{display: none;}
+.tab_product ul li a:before {content: "";position: absolute;left: 50%;right: 50%;bottom: 0;height: 1px;background: #fff;transition: all 0.3s;-webkit-transition: all 0.3s;-moz-transition: all 0.3s;-o-transition: all 0.3s;-ms-transition: all 0.3s;}
+.tab_product ul li a:hover:before,.tab_product ul li.active a:before {left: 0;right: 0;}
+.tab_product ul li a:hover,.tab_product ul li.active a{color: #fff;}
+/*++++++++++PAGINATION+++++++++++*/
+div.pagination_ajax{clear:both;text-align:center; line-height:1.4em;margin-top: 20px;}
+div.pagination_ajax span{display: inline-block; color: #FF0; width: 21px; padding: 2px 0px;text-align:center; text-shadow:0px 0px 2px #000;background-color: #902803; font-weight: bold; border-radius: 50%;}
+div.pagination_ajax a.paging{display: inline-block; color: #FFF; width: 21px; padding: 2px 0px;text-align:center;  background-color: #319710; font-weight: bold;cursor: pointer}
+div.pagination_ajax a.paging:hover{background-color:#319710;}
+div.pagination_ajax {text-align:center;color:#e32424;}
+div.pagination_ajax ul{display:inline-block;float: right;}
+div.pagination_ajax ul li{margin-bottom: 5px;float: left;min-width: 10px;display: inline-block;margin-right: 5px;padding: 6px 12px;border: thin #DAE0E9 solid;background: #fff;color: #444444;}
+div.pagination_ajax ul li a{color: #444444}
+div.pagination_ajax ul li:hover{color: #fff;background: #9c0000;cursor: pointer;}
+div.pagination_ajax ul li:hover a{color: #fff;}
+div.pagination_ajax .actived{cursor: pointer; color: #4879a6;background: #9c0000;}
+div.pagination_ajax .actived a{color: #fff}
+/*=======*/
+div#container_product{margin-top:10px; width:100%; float:left; }
+div#container_product #tabs {margin-right:5px; margin-bottom: 30px; overflow: hidden;border:1px solid #ccc;}
+div#container_product #tabs li {background:#DFDCDC; margin-right: 1px; color:#464545; text-transform: uppercase; font-family: 'RobotoCondensedBold'; }
+div#container_product #tabs li.active,div#container_product #tabs li:hover {background:#2a7ccc; }
+div#container_product #tabs li {float: left; }
+div#container_product #tabs li a,div#container_product #tabs li p {color: #2a7ccc; font-size:16px; text-decoration:none; padding: 5px 30px; float: left; }
+div#container_product #tabs li.active a,div#container_product #tabs li:hover a {color: #fff;} .phantrang {text-align: center; margin-top: 20px; }
+/*==*/
+.paging{display: inline-block; text-align: center; width: 100%;}
